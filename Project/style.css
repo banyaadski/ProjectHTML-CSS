@@ -731,7 +731,6 @@ li {
   z-index: 1;
   background: #FFFFFF;
   height: 601px;
-  width: 1141px;
   border: 1px solid #EAEAEA;
 }
 .product_info_nameCollection {
@@ -1106,4 +1105,61 @@ li {
   gap: 30px;
   grid-template-columns: repeat(3, 360px);
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .package {
+    padding-left: calc(50% - 370px);
+    padding-right: calc(50% - 370px);
+  }
+  .cartContents {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+  }
+  .cartContents_right {
+    display: flex;
+    gap: 2px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav {
+    right: 5px;
+  }
+  .items {
+    display: grid;
+    gap: 16px;
+    padding-bottom: 128px;
+    grid-template-columns: repeat(2, 360px);
+    justify-content: center;
+  }
+  .items_item_adaptive {
+    display: none;
+  }
+  .Form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .Form_right {
+    width: 354px;
+  }
+  .Form_right_h1 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .Form_right_h2 {
+    font-size: 16px;
+    line-height: 19px;
+    width: 354px;
+  }
+  .Form_right_colomn {
+    display: flex;
+    gap: 23px;
+    padding-top: 16px;
+  }
+  .Form_right_colomn_parag {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }/*# sourceMappingURL=style.css.map */

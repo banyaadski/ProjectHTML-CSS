@@ -506,7 +506,7 @@
     z-index: 1;
     background: #FFFFFF;
     height: 601px;
-    width: 1141px;
+    // width: 1141px;
     border: 1px solid #EAEAEA;
 
     &_nameCollection{
@@ -900,4 +900,61 @@
     gap: 30px;
     grid-template-columns: repeat(3, 360px);
     justify-content: center;
+}
+
+@media(max-width: 768px){
+    .package{
+        padding-left: calc(50% - 370px);
+        padding-right: calc(50% - 370px);
+    }
+    .cartContents{
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        &_right{
+            display: flex;
+            gap: 2px;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    .nav{
+        right: 5px;
+    }
+    .items{
+        display: grid;
+        gap: 16px;
+        padding-bottom: 128px;
+        grid-template-columns: repeat(2, 360px);
+        justify-content: center;
+        &_item_adaptive{
+            display: none;
+        }
+    }
+    .Form{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        &_right{
+            width: 354px;
+            &_h1{
+                font-size: 16px;
+                line-height: 19px;
+            }
+            &_h2{
+                font-size: 16px;
+                line-height: 19px;
+                width: 354px;
+            }
+            &_colomn{
+                display: flex;
+                gap: 23px;
+                padding-top: 16px;
+                &_parag{
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
 }
