@@ -326,6 +326,8 @@
         right: 22px;
         top: 28px;
         color: #222222;
+        width: 18px;
+        height: 18px;
     
     }
     &_cross:hover{
@@ -956,5 +958,128 @@
                 }
             }
         }
+        .top_front_img{
+            display: none;
+        }
+    }
+    
+}
+@media(max-width: 426px){
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .top_front{
+        width: 375px;
+        height: 363px;
+        &_img{
+            display: none;
+        }
+    }
+    .sale_order{
+        display: flex;
+        flex-wrap: wrap;
+        &_item4_sale{
+            width: 343px;
+            height: 111px;
+        }
+    }
+    .img_item4{
+        width: 360px;
+        height: 111px;
+    }
+    .top_head{
+        &_icon{
+            &_account{
+                display: none;
+            }
+            &_logo_out{
+                display: none;
+            }
+        }
+    }
+    .package{
+        padding-left: calc(50% - 180px);
+        padding-right: calc(50% - 180px);
+    }
+    .sub_header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+    }
+    
+    .products{
+        display: flex;
+        position: relative;
+        gap: 40px;
+        flex-direction: column;
+        &_cross{
+            width: 10px;
+            height: 11px;
+            right: 12px;
+            top: 17px;
+        }
+        &__image{
+            width: 143px;
+            height: 188px;
+        }
+        &_item{
+            border-radius: 2px;
+            box-shadow: 20px 20px 28px rgb(0 0 0 / 25%);
+            width: 358px;
+            height: 188px;
+            display: flex;
+            position: relative;
+        }
+        &_info{
+            &_nameText{
+                width: 143px;
+                font-size: 16px;
+                line-height: 19px;
+                padding-bottom: 25px;
+            }
+            &_otherText{
+                font-size: 14px;
+                line-height: 17px;
+                &_quantity{
+                    font-size: 14px;
+                    
+                    line-height: 17px;
+                }
+            }
+            &_quantity{
+                width: 23px;
+                height: 14px;
+            }
+        }
+        
+    }
+    .button{
+        width: 359px;
+        padding-top: 30px;
+        padding-bottom: 1px;
+        &_click{
+            font-size: 12px;
+            line-height: 14px;
+            height: 33px;
+            width: 175px;
+        }
+    }
+    
+    .cartContents_right {
+        display: flex;
+        gap: 48px;
+        flex-wrap: wrap;
+        
+    }
+    .footer {
+        
+        display: flex;
+        padding-top: 52px;
+        padding-bottom: 24px;
+        gap: 25px;
+        flex-direction: column-reverse;
     }
 }
+

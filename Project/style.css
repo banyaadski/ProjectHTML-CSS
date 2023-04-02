@@ -68,6 +68,9 @@ summary::-webkit-details-marker {
 .top_head_icon {
   color: #E8E8E8;
 }
+.top_head_icon_account {
+  color: #E8E8E8;
+}
 .top_head_icon_logo_out {
   color: #E8E8E8;
 }
@@ -557,6 +560,8 @@ li {
   right: 22px;
   top: 28px;
   color: #222222;
+  width: 18px;
+  height: 18px;
 }
 .products_cross:hover {
   fill: #F16D7F;
@@ -1161,5 +1166,114 @@ li {
   .Form_right_colomn_parag {
     font-size: 16px;
     line-height: 19px;
+  }
+  .Form .top_front_img {
+    display: none;
+  }
+}
+@media (max-width: 426px) {
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .top_front {
+    width: 375px;
+    height: 363px;
+  }
+  .top_front_img {
+    display: none;
+  }
+  .sale_order {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sale_order_item4_sale {
+    width: 343px;
+    height: 111px;
+  }
+  .img_item4 {
+    width: 360px;
+    height: 111px;
+  }
+  .top_head_icon_account {
+    display: none;
+  }
+  .top_head_icon_logo_out {
+    display: none;
+  }
+  .package {
+    padding-left: calc(50% - 180px);
+    padding-right: calc(50% - 180px);
+  }
+  .sub_header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  .products {
+    display: flex;
+    position: relative;
+    gap: 40px;
+    flex-direction: column;
+  }
+  .products_cross {
+    width: 10px;
+    height: 11px;
+    right: 12px;
+    top: 17px;
+  }
+  .products__image {
+    width: 143px;
+    height: 188px;
+  }
+  .products_item {
+    border-radius: 2px;
+    box-shadow: 20px 20px 28px rgba(0, 0, 0, 0.25);
+    width: 358px;
+    height: 188px;
+    display: flex;
+    position: relative;
+  }
+  .products_info_nameText {
+    width: 143px;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 25px;
+  }
+  .products_info_otherText {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .products_info_otherText_quantity {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .products_info_quantity {
+    width: 23px;
+    height: 14px;
+  }
+  .button {
+    width: 359px;
+    padding-top: 30px;
+    padding-bottom: 1px;
+  }
+  .button_click {
+    font-size: 12px;
+    line-height: 14px;
+    height: 33px;
+    width: 175px;
+  }
+  .cartContents_right {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+  .footer {
+    display: flex;
+    padding-top: 52px;
+    padding-bottom: 24px;
+    gap: 25px;
+    flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=style.css.map */
